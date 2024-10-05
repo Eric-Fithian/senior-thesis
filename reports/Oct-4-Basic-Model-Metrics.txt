@@ -1,0 +1,160 @@
+Regression models reported  Mean Squared Error
+Binary classification models reported Accuracy 
+!!(note that the accuracy is negative as a mistake)!!
+
+Testing features: ['of_gaze_0_x_I', 'of_gaze_0_y_I', 'of_gaze_0_z_I', 'of_gaze_1_x_I', 'of_gaze_1_y_I', 'of_gaze_1_z_I', 'of_gaze_angle_x_I', 'of_gaze_angle_y_I', 'of_gaze_0_x_P', 'of_gaze_0_y_P', 'of_gaze_0_z_P', 'of_gaze_1_x_P', 'of_gaze_1_y_P', 'of_gaze_1_z_P', 'of_gaze_angle_x_P', 'of_gaze_angle_y_P']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 3.190
+XGBRegressor              -- Average CV _Scorer   : 2.186
+MLPRegressor              -- Average CV _Scorer   : 2.139
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.666
+XGBRegressor              -- Average CV _Scorer   : 0.903
+MLPRegressor              -- Average CV _Scorer   : 1.551
+
+--- Confident ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.605
+XGBRegressor              -- Average CV _Scorer   : 1.237
+MLPRegressor              -- Average CV _Scorer   : 2.584
+
+--- Stressed ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.192
+XGBRegressor              -- Average CV _Scorer   : 2.366
+MLPRegressor              -- Average CV _Scorer   : 7.087
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.161
+XGBRegressor              -- Average CV _Scorer   : 1.243
+MLPRegressor              -- Average CV _Scorer   : 3.172
+Testing features: ['of_pose_Tx_I', 'of_pose_Ty_I', 'of_pose_Tz_I', 'of_pose_Rx_I', 'of_pose_Ry_I', 'of_pose_Rz_I', 'of_pose_Tx_P', 'of_pose_Ty_P', 'of_pose_Tz_P', 'of_pose_Rx_P', 'of_pose_Ry_P', 'of_pose_Rz_P']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.444
+XGBRegressor              -- Average CV _Scorer   : 1.779
+MLPRegressor              -- Average CV _Scorer   : 2.275
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.934
+XGBRegressor              -- Average CV _Scorer   : 1.576
+MLPRegressor              -- Average CV _Scorer   : 1.731
+
+--- Confident ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.247
+XGBRegressor              -- Average CV _Scorer   : 1.590
+MLPRegressor              -- Average CV _Scorer   : 2.343
+
+--- Stressed ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.192
+XGBRegressor              -- Average CV _Scorer   : 1.793
+MLPRegressor              -- Average CV _Scorer   : 1.894
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.801
+XGBRegressor              -- Average CV _Scorer   : 1.745
+MLPRegressor              -- Average CV _Scorer   : 2.405
+Testing features: ['of_AU01_r_I', 'of_AU02_r_I', 'of_AU04_r_I', 'of_AU05_r_I', 'of_AU06_r_I', 'of_AU07_r_I', 'of_AU09_r_I', 'of_AU10_r_I', 'of_AU12_r_I', 'of_AU14_r_I', 'of_AU15_r_I', 'of_AU17_r_I', 'of_AU20_r_I', 'of_AU23_r_I', 'of_AU25_r_I', 'of_AU26_r_I', 'of_AU45_r_I', 'of_AU01_r_P', 'of_AU02_r_P', 'of_AU04_r_P', 'of_AU05_r_P', 'of_AU06_r_P', 'of_AU07_r_P', 'of_AU09_r_P', 'of_AU10_r_P', 'of_AU12_r_P', 'of_AU14_r_P', 'of_AU15_r_P', 'of_AU17_r_P', 'of_AU20_r_P', 'of_AU23_r_P', 'of_AU25_r_P', 'of_AU26_r_P', 'of_AU45_r_P']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.468
+XGBRegressor              -- Average CV _Scorer   : 1.641
+MLPRegressor              -- Average CV _Scorer   : 1.559
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 3.448
+XGBRegressor              -- Average CV _Scorer   : 1.866
+MLPRegressor              -- Average CV _Scorer   : 1.382
+
+--- Confident ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.444
+XGBRegressor              -- Average CV _Scorer   : 1.770
+MLPRegressor              -- Average CV _Scorer   : 1.628
+
+--- Stressed ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 2.769
+XGBRegressor              -- Average CV _Scorer   : 1.713
+MLPRegressor              -- Average CV _Scorer   : 1.433
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Average CV _Scorer   : 1.296
+XGBRegressor              -- Average CV _Scorer   : 1.196
+MLPRegressor              -- Average CV _Scorer   : 1.481
+Testing features: ['of_gaze_0_x_I', 'of_gaze_0_y_I', 'of_gaze_0_z_I', 'of_gaze_1_x_I', 'of_gaze_1_y_I', 'of_gaze_1_z_I', 'of_gaze_angle_x_I', 'of_gaze_angle_y_I', 'of_gaze_0_x_P', 'of_gaze_0_y_P', 'of_gaze_0_z_P', 'of_gaze_1_x_P', 'of_gaze_1_y_P', 'of_gaze_1_z_P', 'of_gaze_angle_x_P', 'of_gaze_angle_y_P']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.500
+XGBClassifier             -- Average CV _Scorer   : -0.500
+MLPClassifier             -- Average CV _Scorer   : -0.615
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.692
+XGBClassifier             -- Average CV _Scorer   : -0.615
+MLPClassifier             -- Average CV _Scorer   : -0.577
+
+--- Confident ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.654
+XGBClassifier             -- Average CV _Scorer   : -0.692
+MLPClassifier             -- Average CV _Scorer   : -0.577
+
+--- Stressed ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.538
+XGBClassifier             -- Average CV _Scorer   : -0.654
+MLPClassifier             -- Average CV _Scorer   : -0.615
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.654
+XGBClassifier             -- Average CV _Scorer   : -0.692
+MLPClassifier             -- Average CV _Scorer   : -0.692
+Testing features: ['of_pose_Tx_I', 'of_pose_Ty_I', 'of_pose_Tz_I', 'of_pose_Rx_I', 'of_pose_Ry_I', 'of_pose_Rz_I', 'of_pose_Tx_P', 'of_pose_Ty_P', 'of_pose_Tz_P', 'of_pose_Rx_P', 'of_pose_Ry_P', 'of_pose_Rz_P']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.577
+XGBClassifier             -- Average CV _Scorer   : -0.308
+MLPClassifier             -- Average CV _Scorer   : -0.346
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.346
+XGBClassifier             -- Average CV _Scorer   : -0.462
+MLPClassifier             -- Average CV _Scorer   : -0.577
+
+--- Confident ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.462
+XGBClassifier             -- Average CV _Scorer   : -0.538
+MLPClassifier             -- Average CV _Scorer   : -0.500
+
+--- Stressed ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.423
+XGBClassifier             -- Average CV _Scorer   : -0.654
+MLPClassifier             -- Average CV _Scorer   : -0.654
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.654
+XGBClassifier             -- Average CV _Scorer   : -0.423
+MLPClassifier             -- Average CV _Scorer   : -0.577
+Testing features: ['of_AU01_r_I', 'of_AU02_r_I', 'of_AU04_r_I', 'of_AU05_r_I', 'of_AU06_r_I', 'of_AU07_r_I', 'of_AU09_r_I', 'of_AU10_r_I', 'of_AU12_r_I', 'of_AU14_r_I', 'of_AU15_r_I', 'of_AU17_r_I', 'of_AU20_r_I', 'of_AU23_r_I', 'of_AU25_r_I', 'of_AU26_r_I', 'of_AU45_r_I', 'of_AU01_r_P', 'of_AU02_r_P', 'of_AU04_r_P', 'of_AU05_r_P', 'of_AU06_r_P', 'of_AU07_r_P', 'of_AU09_r_P', 'of_AU10_r_P', 'of_AU12_r_P', 'of_AU14_r_P', 'of_AU15_r_P', 'of_AU17_r_P', 'of_AU20_r_P', 'of_AU23_r_P', 'of_AU25_r_P', 'of_AU26_r_P', 'of_AU45_r_P']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.423
+XGBClassifier             -- Average CV _Scorer   : -0.192
+MLPClassifier             -- Average CV _Scorer   : -0.346
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.269
+XGBClassifier             -- Average CV _Scorer   : -0.462
+MLPClassifier             -- Average CV _Scorer   : -0.500
+
+--- Confident ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.462
+XGBClassifier             -- Average CV _Scorer   : -0.308
+MLPClassifier             -- Average CV _Scorer   : -0.346
+
+--- Stressed ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.654
+XGBClassifier             -- Average CV _Scorer   : -0.692
+MLPClassifier             -- Average CV _Scorer   : -0.731
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Average CV _Scorer   : -0.500
+XGBClassifier             -- Average CV _Scorer   : -0.731
+MLPClassifier             -- Average CV _Scorer   : -0.769
