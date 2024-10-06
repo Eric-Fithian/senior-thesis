@@ -51,22 +51,38 @@ f3s =  ["of_AU01_r_I", "of_AU02_r_I", "of_AU04_r_I", "of_AU05_r_I", "of_AU06_r_I
 
 Y_cols = ['PID', 'Hirability_Interview', 'Evaluation Score_POST', 'Confident', 'Stressed', 'Uncomfortable']
 
-
 # Get sub-dataframe with selected features and 'PID'
 df_X = df_master[f1s + f2s + f3s + ['PID']]
 
-df_X_avg = df_X.groupby('PID').mean().reset_index()
+# df_X_avg = df_X.groupby('PID').mean().reset_index()
+
+# Compute mean, variance, max, min, and standard deviation per PID
+df_X_agg = df_X.groupby('PID').agg(['mean', 'var', 'max', 'min', 'std']).reset_index()
+
+# Flatten the columns
+df_X_agg.columns = ['PID'] + ['{}_{}'.format(col[0], col[1]) for col in df_X_agg.columns[1:]]
+
+# Define the statistical measures
+stats = ['mean', 'var', 'max', 'min', 'std']
+
+# Create new feature lists with statistics
+new_features = ['{}_{}'.format(feat, stat) for feat in f1s + f2s + f3s for stat in stats]
+
+# Similarly, create feature lists for each feature group
+f1s_stats = ['{}_{}'.format(feat, stat) for feat in f1s for stat in stats]
+f2s_stats = ['{}_{}'.format(feat, stat) for feat in f2s for stat in stats]
+f3s_stats = ['{}_{}'.format(feat, stat) for feat in f3s for stat in stats]
 
 # Get Y's to predict
 
 df_Y = df_Y[Y_cols]
 
 # Filter out PID's that aren't in the master df (for example the videos that do switching and we couldn't process)
-df_Y = df_Y[df_Y['PID'].isin(df_X_avg['PID'])]
+df_Y = df_Y[df_Y['PID'].isin(df_X_agg['PID'])]
 
 ### Split Train and Test
 
-X_train, X_test, y_train, y_test = train_test_split(df_X_avg, df_Y, test_size=0.2, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(df_X_agg, df_Y, test_size=0.2, random_state=1)
 
 #####
 ##### Binarize data for binary classification later
@@ -104,13 +120,13 @@ y_test_bin['Uncomfortable'] = y_test_bin['Uncomfortable'].apply(lambda x: 1 if x
 scaler_X = StandardScaler()
 scaler_Y = StandardScaler()
 
-scaler_X.fit(X_train[f1s+f2s+f3s])
+scaler_X.fit(X_train[new_features])
 scaler_Y.fit(y_train[Y_cols[1:]])
 
 # Scale Train
 
 X_train_scaled = X_train.copy()
-X_train_scaled[f1s+f2s+f3s] = scaler_X.transform(X_train[f1s+f2s+f3s])
+X_train_scaled[new_features] = scaler_X.transform(X_train[new_features])
 
 y_train_scaled = y_train.copy()
 y_train_scaled[Y_cols[1:]] = scaler_Y.transform(y_train[Y_cols[1:]])
@@ -118,7 +134,7 @@ y_train_scaled[Y_cols[1:]] = scaler_Y.transform(y_train[Y_cols[1:]])
 # Scale Test
 
 X_test_scaled = X_test.copy()
-X_test_scaled[f1s+f2s+f3s] = scaler_X.transform(X_test[f1s+f2s+f3s])
+X_test_scaled[new_features] = scaler_X.transform(X_test[new_features])
 
 y_test_scaled = y_test.copy()
 y_test_scaled[Y_cols[1:]] = scaler_Y.transform(y_test[Y_cols[1:]])
@@ -130,21 +146,22 @@ y_test_scaled[Y_cols[1:]] = scaler_Y.transform(y_test[Y_cols[1:]])
 def train_and_eval_model(X_train, X_test, y_train, y_test, model, scorer):
     
     # Cross validation
-    scores = cross_val_score(model, X_train, y_train, cv=LeaveOneOut(), scoring=scorer)
+    cv_scores = cross_val_score(model, X_train, y_train, cv=LeaveOneOut(), scoring=scorer)
     
     # Train on total train set and eval on test set
     model.fit(X_train, y_train)
     
-    score = scorer(model, X_test, y_test)
+    train_score = scorer(model, X_train, y_train)
+    test_score = scorer(model, X_test, y_test)
     
-    print(f"{model.__class__.__name__:<25} -- Average CV score: {scores.mean():.3f} -- Test Score: {score:.3f}")
+    print(f"{model.__class__.__name__:<25} -- Train score: {train_score:.3f} -- Average CV score: {cv_scores.mean():.3f} -- Test Score: {test_score:.3f}")
 
 ##### Regression
 
 # For each feature set and then for each predictor/output
 mse_scorer = make_scorer(mean_squared_error, greater_is_better=False)
 
-for f in [f1s, f2s, f3s]:
+for f in [f1s_stats, f2s_stats, f3s_stats]:
     print(f"Testing features: {f}")
     X_train_f = X_train_scaled[f]
     X_test_f = X_test_scaled[f]
@@ -169,7 +186,7 @@ for f in [f1s, f2s, f3s]:
 # For each feature set and then for each predictor/output
 acc_scorer = make_scorer(accuracy_score)
 
-for f in [f1s, f2s, f3s]:
+for f in [f1s_stats, f2s_stats, f3s_stats]:
     print(f"Testing features: {f}")
     X_train_f = X_train_scaled[f]
     X_test_f = X_test_scaled[f]

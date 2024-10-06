@@ -2,6 +2,8 @@ Regression models reported  Mean Squared Error
 Binary classification models reported Accuracy 
 !!(note that the accuracy is negative as a mistake)!!
 
+THESE FEATURES WERE AVERAGED OVER THE INTERVIEW
+
 Testing features: ['of_gaze_0_x_I', 'of_gaze_0_y_I', 'of_gaze_0_z_I', 'of_gaze_1_x_I', 'of_gaze_1_y_I', 'of_gaze_1_z_I', 'of_gaze_angle_x_I', 'of_gaze_angle_y_I', 'of_gaze_0_x_P', 'of_gaze_0_y_P', 'of_gaze_0_z_P', 'of_gaze_1_x_P', 'of_gaze_1_y_P', 'of_gaze_1_z_P', 'of_gaze_angle_x_P', 'of_gaze_angle_y_P']
 
 --- Hirability_Interview ---

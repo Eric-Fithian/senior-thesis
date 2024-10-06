@@ -1,0 +1,159 @@
+Regression models reported  Mean Squared Error
+Binary classification models reported Accuracy 
+!!(note that the MSE error as negative is a mistake)!!
+Testing features: ['of_gaze_0_x_I_mean', 'of_gaze_0_x_I_var', 'of_gaze_0_x_I_max', 'of_gaze_0_x_I_min', 'of_gaze_0_x_I_std', 'of_gaze_0_y_I_mean', 'of_gaze_0_y_I_var', 'of_gaze_0_y_I_max', 'of_gaze_0_y_I_min', 'of_gaze_0_y_I_std', 'of_gaze_0_z_I_mean', 'of_gaze_0_z_I_var', 'of_gaze_0_z_I_max', 'of_gaze_0_z_I_min', 'of_gaze_0_z_I_std', 'of_gaze_1_x_I_mean', 'of_gaze_1_x_I_var', 'of_gaze_1_x_I_max', 'of_gaze_1_x_I_min', 'of_gaze_1_x_I_std', 'of_gaze_1_y_I_mean', 'of_gaze_1_y_I_var', 'of_gaze_1_y_I_max', 'of_gaze_1_y_I_min', 'of_gaze_1_y_I_std', 'of_gaze_1_z_I_mean', 'of_gaze_1_z_I_var', 'of_gaze_1_z_I_max', 'of_gaze_1_z_I_min', 'of_gaze_1_z_I_std', 'of_gaze_angle_x_I_mean', 'of_gaze_angle_x_I_var', 'of_gaze_angle_x_I_max', 'of_gaze_angle_x_I_min', 'of_gaze_angle_x_I_std', 'of_gaze_angle_y_I_mean', 'of_gaze_angle_y_I_var', 'of_gaze_angle_y_I_max', 'of_gaze_angle_y_I_min', 'of_gaze_angle_y_I_std', 'of_gaze_0_x_P_mean', 'of_gaze_0_x_P_var', 'of_gaze_0_x_P_max', 'of_gaze_0_x_P_min', 'of_gaze_0_x_P_std', 'of_gaze_0_y_P_mean', 'of_gaze_0_y_P_var', 'of_gaze_0_y_P_max', 'of_gaze_0_y_P_min', 'of_gaze_0_y_P_std', 'of_gaze_0_z_P_mean', 'of_gaze_0_z_P_var', 'of_gaze_0_z_P_max', 'of_gaze_0_z_P_min', 'of_gaze_0_z_P_std', 'of_gaze_1_x_P_mean', 'of_gaze_1_x_P_var', 'of_gaze_1_x_P_max', 'of_gaze_1_x_P_min', 'of_gaze_1_x_P_std', 'of_gaze_1_y_P_mean', 'of_gaze_1_y_P_var', 'of_gaze_1_y_P_max', 'of_gaze_1_y_P_min', 'of_gaze_1_y_P_std', 'of_gaze_1_z_P_mean', 'of_gaze_1_z_P_var', 'of_gaze_1_z_P_max', 'of_gaze_1_z_P_min', 'of_gaze_1_z_P_std', 'of_gaze_angle_x_P_mean', 'of_gaze_angle_x_P_var', 'of_gaze_angle_x_P_max', 'of_gaze_angle_x_P_min', 'of_gaze_angle_x_P_std', 'of_gaze_angle_y_P_mean', 'of_gaze_angle_y_P_var', 'of_gaze_angle_y_P_max', 'of_gaze_angle_y_P_min', 'of_gaze_angle_y_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.648 -- Test Score: -2.459
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -2.192 -- Test Score: -1.580
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.254 -- Test Score: -2.879
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.033 -- Test Score: -1.053
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.168 -- Test Score: -1.471
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.450 -- Test Score: -3.814
+
+--- Confident ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.889 -- Test Score: -2.086
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.846 -- Test Score: -1.566
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.405 -- Test Score: -2.594
+
+--- Stressed ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.962 -- Test Score: -1.143
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -2.795 -- Test Score: -1.808
+MLPRegressor              -- Train score: -0.001 -- Average CV score: -2.128 -- Test Score: -1.000
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.161 -- Test Score: -1.605
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.257 -- Test Score: -1.371
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -2.414 -- Test Score: -1.779
+Testing features: ['of_pose_Tx_I_mean', 'of_pose_Tx_I_var', 'of_pose_Tx_I_max', 'of_pose_Tx_I_min', 'of_pose_Tx_I_std', 'of_pose_Ty_I_mean', 'of_pose_Ty_I_var', 'of_pose_Ty_I_max', 'of_pose_Ty_I_min', 'of_pose_Ty_I_std', 'of_pose_Tz_I_mean', 'of_pose_Tz_I_var', 'of_pose_Tz_I_max', 'of_pose_Tz_I_min', 'of_pose_Tz_I_std', 'of_pose_Rx_I_mean', 'of_pose_Rx_I_var', 'of_pose_Rx_I_max', 'of_pose_Rx_I_min', 'of_pose_Rx_I_std', 'of_pose_Ry_I_mean', 'of_pose_Ry_I_var', 'of_pose_Ry_I_max', 'of_pose_Ry_I_min', 'of_pose_Ry_I_std', 'of_pose_Rz_I_mean', 'of_pose_Rz_I_var', 'of_pose_Rz_I_max', 'of_pose_Rz_I_min', 'of_pose_Rz_I_std', 'of_pose_Tx_P_mean', 'of_pose_Tx_P_var', 'of_pose_Tx_P_max', 'of_pose_Tx_P_min', 'of_pose_Tx_P_std', 'of_pose_Ty_P_mean', 'of_pose_Ty_P_var', 'of_pose_Ty_P_max', 'of_pose_Ty_P_min', 'of_pose_Ty_P_std', 'of_pose_Tz_P_mean', 'of_pose_Tz_P_var', 'of_pose_Tz_P_max', 'of_pose_Tz_P_min', 'of_pose_Tz_P_std', 'of_pose_Rx_P_mean', 'of_pose_Rx_P_var', 'of_pose_Rx_P_max', 'of_pose_Rx_P_min', 'of_pose_Rx_P_std', 'of_pose_Ry_P_mean', 'of_pose_Ry_P_var', 'of_pose_Ry_P_max', 'of_pose_Ry_P_min', 'of_pose_Ry_P_std', 'of_pose_Rz_P_mean', 'of_pose_Rz_P_var', 'of_pose_Rz_P_max', 'of_pose_Rz_P_min', 'of_pose_Rz_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.648 -- Test Score: -0.671
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -2.835 -- Test Score: -1.138
+MLPRegressor              -- Train score: -0.003 -- Average CV score: -3.730 -- Test Score: -1.893
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.938 -- Test Score: -2.441
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.957 -- Test Score: -1.301
+MLPRegressor              -- Train score: -0.001 -- Average CV score: -2.593 -- Test Score: -1.860
+
+--- Confident ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -3.130 -- Test Score: -1.192
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.796 -- Test Score: -0.752
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -3.101 -- Test Score: -1.655
+
+--- Stressed ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -0.923 -- Test Score: -2.714
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -0.912 -- Test Score: -1.344
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -2.156 -- Test Score: -0.726
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.017 -- Test Score: -0.803
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.596 -- Test Score: -0.643
+MLPRegressor              -- Train score: -0.001 -- Average CV score: -2.230 -- Test Score: -1.622
+Testing features: ['of_AU01_r_I_mean', 'of_AU01_r_I_var', 'of_AU01_r_I_max', 'of_AU01_r_I_min', 'of_AU01_r_I_std', 'of_AU02_r_I_mean', 'of_AU02_r_I_var', 'of_AU02_r_I_max', 'of_AU02_r_I_min', 'of_AU02_r_I_std', 'of_AU04_r_I_mean', 'of_AU04_r_I_var', 'of_AU04_r_I_max', 'of_AU04_r_I_min', 'of_AU04_r_I_std', 'of_AU05_r_I_mean', 'of_AU05_r_I_var', 'of_AU05_r_I_max', 'of_AU05_r_I_min', 'of_AU05_r_I_std', 'of_AU06_r_I_mean', 'of_AU06_r_I_var', 'of_AU06_r_I_max', 'of_AU06_r_I_min', 'of_AU06_r_I_std', 'of_AU07_r_I_mean', 'of_AU07_r_I_var', 'of_AU07_r_I_max', 'of_AU07_r_I_min', 'of_AU07_r_I_std', 'of_AU09_r_I_mean', 'of_AU09_r_I_var', 'of_AU09_r_I_max', 'of_AU09_r_I_min', 'of_AU09_r_I_std', 'of_AU10_r_I_mean', 'of_AU10_r_I_var', 'of_AU10_r_I_max', 'of_AU10_r_I_min', 'of_AU10_r_I_std', 'of_AU12_r_I_mean', 'of_AU12_r_I_var', 'of_AU12_r_I_max', 'of_AU12_r_I_min', 'of_AU12_r_I_std', 'of_AU14_r_I_mean', 'of_AU14_r_I_var', 'of_AU14_r_I_max', 'of_AU14_r_I_min', 'of_AU14_r_I_std', 'of_AU15_r_I_mean', 'of_AU15_r_I_var', 'of_AU15_r_I_max', 'of_AU15_r_I_min', 'of_AU15_r_I_std', 'of_AU17_r_I_mean', 'of_AU17_r_I_var', 'of_AU17_r_I_max', 'of_AU17_r_I_min', 'of_AU17_r_I_std', 'of_AU20_r_I_mean', 'of_AU20_r_I_var', 'of_AU20_r_I_max', 'of_AU20_r_I_min', 'of_AU20_r_I_std', 'of_AU23_r_I_mean', 'of_AU23_r_I_var', 'of_AU23_r_I_max', 'of_AU23_r_I_min', 'of_AU23_r_I_std', 'of_AU25_r_I_mean', 'of_AU25_r_I_var', 'of_AU25_r_I_max', 'of_AU25_r_I_min', 'of_AU25_r_I_std', 'of_AU26_r_I_mean', 'of_AU26_r_I_var', 'of_AU26_r_I_max', 'of_AU26_r_I_min', 'of_AU26_r_I_std', 'of_AU45_r_I_mean', 'of_AU45_r_I_var', 'of_AU45_r_I_max', 'of_AU45_r_I_min', 'of_AU45_r_I_std', 'of_AU01_r_P_mean', 'of_AU01_r_P_var', 'of_AU01_r_P_max', 'of_AU01_r_P_min', 'of_AU01_r_P_std', 'of_AU02_r_P_mean', 'of_AU02_r_P_var', 'of_AU02_r_P_max', 'of_AU02_r_P_min', 'of_AU02_r_P_std', 'of_AU04_r_P_mean', 'of_AU04_r_P_var', 'of_AU04_r_P_max', 'of_AU04_r_P_min', 'of_AU04_r_P_std', 'of_AU05_r_P_mean', 'of_AU05_r_P_var', 'of_AU05_r_P_max', 'of_AU05_r_P_min', 'of_AU05_r_P_std', 'of_AU06_r_P_mean', 'of_AU06_r_P_var', 'of_AU06_r_P_max', 'of_AU06_r_P_min', 'of_AU06_r_P_std', 'of_AU07_r_P_mean', 'of_AU07_r_P_var', 'of_AU07_r_P_max', 'of_AU07_r_P_min', 'of_AU07_r_P_std', 'of_AU09_r_P_mean', 'of_AU09_r_P_var', 'of_AU09_r_P_max', 'of_AU09_r_P_min', 'of_AU09_r_P_std', 'of_AU10_r_P_mean', 'of_AU10_r_P_var', 'of_AU10_r_P_max', 'of_AU10_r_P_min', 'of_AU10_r_P_std', 'of_AU12_r_P_mean', 'of_AU12_r_P_var', 'of_AU12_r_P_max', 'of_AU12_r_P_min', 'of_AU12_r_P_std', 'of_AU14_r_P_mean', 'of_AU14_r_P_var', 'of_AU14_r_P_max', 'of_AU14_r_P_min', 'of_AU14_r_P_std', 'of_AU15_r_P_mean', 'of_AU15_r_P_var', 'of_AU15_r_P_max', 'of_AU15_r_P_min', 'of_AU15_r_P_std', 'of_AU17_r_P_mean', 'of_AU17_r_P_var', 'of_AU17_r_P_max', 'of_AU17_r_P_min', 'of_AU17_r_P_std', 'of_AU20_r_P_mean', 'of_AU20_r_P_var', 'of_AU20_r_P_max', 'of_AU20_r_P_min', 'of_AU20_r_P_std', 'of_AU23_r_P_mean', 'of_AU23_r_P_var', 'of_AU23_r_P_max', 'of_AU23_r_P_min', 'of_AU23_r_P_std', 'of_AU25_r_P_mean', 'of_AU25_r_P_var', 'of_AU25_r_P_max', 'of_AU25_r_P_min', 'of_AU25_r_P_std', 'of_AU26_r_P_mean', 'of_AU26_r_P_var', 'of_AU26_r_P_max', 'of_AU26_r_P_min', 'of_AU26_r_P_std', 'of_AU45_r_P_mean', 'of_AU45_r_P_var', 'of_AU45_r_P_max', 'of_AU45_r_P_min', 'of_AU45_r_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.889 -- Test Score: -2.235
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.948 -- Test Score: -1.044
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.732 -- Test Score: -1.153
+
+--- Evaluation Score_POST ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -1.971 -- Test Score: -2.446
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.595 -- Test Score: -0.956
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.582 -- Test Score: -0.548
+
+--- Confident ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -1.765 -- Test Score: -0.596
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.550 -- Test Score: -1.079
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.500 -- Test Score: -0.702
+
+--- Stressed ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.269 -- Test Score: -1.714
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.669 -- Test Score: -1.235
+MLPRegressor              -- Train score: -0.004 -- Average CV score: -1.550 -- Test Score: -0.585
+
+--- Uncomfortable ---
+DecisionTreeRegressor     -- Train score: -0.000 -- Average CV score: -2.377 -- Test Score: -2.140
+XGBRegressor              -- Train score: -0.000 -- Average CV score: -1.524 -- Test Score: -0.932
+MLPRegressor              -- Train score: -0.000 -- Average CV score: -1.176 -- Test Score: -0.954
+Testing features: ['of_gaze_0_x_I_mean', 'of_gaze_0_x_I_var', 'of_gaze_0_x_I_max', 'of_gaze_0_x_I_min', 'of_gaze_0_x_I_std', 'of_gaze_0_y_I_mean', 'of_gaze_0_y_I_var', 'of_gaze_0_y_I_max', 'of_gaze_0_y_I_min', 'of_gaze_0_y_I_std', 'of_gaze_0_z_I_mean', 'of_gaze_0_z_I_var', 'of_gaze_0_z_I_max', 'of_gaze_0_z_I_min', 'of_gaze_0_z_I_std', 'of_gaze_1_x_I_mean', 'of_gaze_1_x_I_var', 'of_gaze_1_x_I_max', 'of_gaze_1_x_I_min', 'of_gaze_1_x_I_std', 'of_gaze_1_y_I_mean', 'of_gaze_1_y_I_var', 'of_gaze_1_y_I_max', 'of_gaze_1_y_I_min', 'of_gaze_1_y_I_std', 'of_gaze_1_z_I_mean', 'of_gaze_1_z_I_var', 'of_gaze_1_z_I_max', 'of_gaze_1_z_I_min', 'of_gaze_1_z_I_std', 'of_gaze_angle_x_I_mean', 'of_gaze_angle_x_I_var', 'of_gaze_angle_x_I_max', 'of_gaze_angle_x_I_min', 'of_gaze_angle_x_I_std', 'of_gaze_angle_y_I_mean', 'of_gaze_angle_y_I_var', 'of_gaze_angle_y_I_max', 'of_gaze_angle_y_I_min', 'of_gaze_angle_y_I_std', 'of_gaze_0_x_P_mean', 'of_gaze_0_x_P_var', 'of_gaze_0_x_P_max', 'of_gaze_0_x_P_min', 'of_gaze_0_x_P_std', 'of_gaze_0_y_P_mean', 'of_gaze_0_y_P_var', 'of_gaze_0_y_P_max', 'of_gaze_0_y_P_min', 'of_gaze_0_y_P_std', 'of_gaze_0_z_P_mean', 'of_gaze_0_z_P_var', 'of_gaze_0_z_P_max', 'of_gaze_0_z_P_min', 'of_gaze_0_z_P_std', 'of_gaze_1_x_P_mean', 'of_gaze_1_x_P_var', 'of_gaze_1_x_P_max', 'of_gaze_1_x_P_min', 'of_gaze_1_x_P_std', 'of_gaze_1_y_P_mean', 'of_gaze_1_y_P_var', 'of_gaze_1_y_P_max', 'of_gaze_1_y_P_min', 'of_gaze_1_y_P_std', 'of_gaze_1_z_P_mean', 'of_gaze_1_z_P_var', 'of_gaze_1_z_P_max', 'of_gaze_1_z_P_min', 'of_gaze_1_z_P_std', 'of_gaze_angle_x_P_mean', 'of_gaze_angle_x_P_var', 'of_gaze_angle_x_P_max', 'of_gaze_angle_x_P_min', 'of_gaze_angle_x_P_std', 'of_gaze_angle_y_P_mean', 'of_gaze_angle_y_P_var', 'of_gaze_angle_y_P_max', 'of_gaze_angle_y_P_min', 'of_gaze_angle_y_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.500 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.423 -- Test Score: 0.571
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.423 -- Test Score: 0.571
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.423 -- Test Score: 0.286
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.429
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.429
+
+--- Confident ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.429
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.462 -- Test Score: 0.571
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.538 -- Test Score: 0.286
+
+--- Stressed ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.654 -- Test Score: 0.429
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.769 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.538 -- Test Score: 0.714
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.500 -- Test Score: 0.857
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.654 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.571
+Testing features: ['of_pose_Tx_I_mean', 'of_pose_Tx_I_var', 'of_pose_Tx_I_max', 'of_pose_Tx_I_min', 'of_pose_Tx_I_std', 'of_pose_Ty_I_mean', 'of_pose_Ty_I_var', 'of_pose_Ty_I_max', 'of_pose_Ty_I_min', 'of_pose_Ty_I_std', 'of_pose_Tz_I_mean', 'of_pose_Tz_I_var', 'of_pose_Tz_I_max', 'of_pose_Tz_I_min', 'of_pose_Tz_I_std', 'of_pose_Rx_I_mean', 'of_pose_Rx_I_var', 'of_pose_Rx_I_max', 'of_pose_Rx_I_min', 'of_pose_Rx_I_std', 'of_pose_Ry_I_mean', 'of_pose_Ry_I_var', 'of_pose_Ry_I_max', 'of_pose_Ry_I_min', 'of_pose_Ry_I_std', 'of_pose_Rz_I_mean', 'of_pose_Rz_I_var', 'of_pose_Rz_I_max', 'of_pose_Rz_I_min', 'of_pose_Rz_I_std', 'of_pose_Tx_P_mean', 'of_pose_Tx_P_var', 'of_pose_Tx_P_max', 'of_pose_Tx_P_min', 'of_pose_Tx_P_std', 'of_pose_Ty_P_mean', 'of_pose_Ty_P_var', 'of_pose_Ty_P_max', 'of_pose_Ty_P_min', 'of_pose_Ty_P_std', 'of_pose_Tz_P_mean', 'of_pose_Tz_P_var', 'of_pose_Tz_P_max', 'of_pose_Tz_P_min', 'of_pose_Tz_P_std', 'of_pose_Rx_P_mean', 'of_pose_Rx_P_var', 'of_pose_Rx_P_max', 'of_pose_Rx_P_min', 'of_pose_Rx_P_std', 'of_pose_Ry_P_mean', 'of_pose_Ry_P_var', 'of_pose_Ry_P_max', 'of_pose_Ry_P_min', 'of_pose_Ry_P_std', 'of_pose_Rz_P_mean', 'of_pose_Rz_P_var', 'of_pose_Rz_P_max', 'of_pose_Rz_P_min', 'of_pose_Rz_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.538 -- Test Score: 0.714
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.385 -- Test Score: 1.000
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.346 -- Test Score: 0.429
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.500 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.346 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.308 -- Test Score: 0.571
+
+--- Confident ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.538 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.571
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.462 -- Test Score: 0.571
+
+--- Stressed ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.962 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.538 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.714
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.857
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.462 -- Test Score: 0.429
+Testing features: ['of_AU01_r_I_mean', 'of_AU01_r_I_var', 'of_AU01_r_I_max', 'of_AU01_r_I_min', 'of_AU01_r_I_std', 'of_AU02_r_I_mean', 'of_AU02_r_I_var', 'of_AU02_r_I_max', 'of_AU02_r_I_min', 'of_AU02_r_I_std', 'of_AU04_r_I_mean', 'of_AU04_r_I_var', 'of_AU04_r_I_max', 'of_AU04_r_I_min', 'of_AU04_r_I_std', 'of_AU05_r_I_mean', 'of_AU05_r_I_var', 'of_AU05_r_I_max', 'of_AU05_r_I_min', 'of_AU05_r_I_std', 'of_AU06_r_I_mean', 'of_AU06_r_I_var', 'of_AU06_r_I_max', 'of_AU06_r_I_min', 'of_AU06_r_I_std', 'of_AU07_r_I_mean', 'of_AU07_r_I_var', 'of_AU07_r_I_max', 'of_AU07_r_I_min', 'of_AU07_r_I_std', 'of_AU09_r_I_mean', 'of_AU09_r_I_var', 'of_AU09_r_I_max', 'of_AU09_r_I_min', 'of_AU09_r_I_std', 'of_AU10_r_I_mean', 'of_AU10_r_I_var', 'of_AU10_r_I_max', 'of_AU10_r_I_min', 'of_AU10_r_I_std', 'of_AU12_r_I_mean', 'of_AU12_r_I_var', 'of_AU12_r_I_max', 'of_AU12_r_I_min', 'of_AU12_r_I_std', 'of_AU14_r_I_mean', 'of_AU14_r_I_var', 'of_AU14_r_I_max', 'of_AU14_r_I_min', 'of_AU14_r_I_std', 'of_AU15_r_I_mean', 'of_AU15_r_I_var', 'of_AU15_r_I_max', 'of_AU15_r_I_min', 'of_AU15_r_I_std', 'of_AU17_r_I_mean', 'of_AU17_r_I_var', 'of_AU17_r_I_max', 'of_AU17_r_I_min', 'of_AU17_r_I_std', 'of_AU20_r_I_mean', 'of_AU20_r_I_var', 'of_AU20_r_I_max', 'of_AU20_r_I_min', 'of_AU20_r_I_std', 'of_AU23_r_I_mean', 'of_AU23_r_I_var', 'of_AU23_r_I_max', 'of_AU23_r_I_min', 'of_AU23_r_I_std', 'of_AU25_r_I_mean', 'of_AU25_r_I_var', 'of_AU25_r_I_max', 'of_AU25_r_I_min', 'of_AU25_r_I_std', 'of_AU26_r_I_mean', 'of_AU26_r_I_var', 'of_AU26_r_I_max', 'of_AU26_r_I_min', 'of_AU26_r_I_std', 'of_AU45_r_I_mean', 'of_AU45_r_I_var', 'of_AU45_r_I_max', 'of_AU45_r_I_min', 'of_AU45_r_I_std', 'of_AU01_r_P_mean', 'of_AU01_r_P_var', 'of_AU01_r_P_max', 'of_AU01_r_P_min', 'of_AU01_r_P_std', 'of_AU02_r_P_mean', 'of_AU02_r_P_var', 'of_AU02_r_P_max', 'of_AU02_r_P_min', 'of_AU02_r_P_std', 'of_AU04_r_P_mean', 'of_AU04_r_P_var', 'of_AU04_r_P_max', 'of_AU04_r_P_min', 'of_AU04_r_P_std', 'of_AU05_r_P_mean', 'of_AU05_r_P_var', 'of_AU05_r_P_max', 'of_AU05_r_P_min', 'of_AU05_r_P_std', 'of_AU06_r_P_mean', 'of_AU06_r_P_var', 'of_AU06_r_P_max', 'of_AU06_r_P_min', 'of_AU06_r_P_std', 'of_AU07_r_P_mean', 'of_AU07_r_P_var', 'of_AU07_r_P_max', 'of_AU07_r_P_min', 'of_AU07_r_P_std', 'of_AU09_r_P_mean', 'of_AU09_r_P_var', 'of_AU09_r_P_max', 'of_AU09_r_P_min', 'of_AU09_r_P_std', 'of_AU10_r_P_mean', 'of_AU10_r_P_var', 'of_AU10_r_P_max', 'of_AU10_r_P_min', 'of_AU10_r_P_std', 'of_AU12_r_P_mean', 'of_AU12_r_P_var', 'of_AU12_r_P_max', 'of_AU12_r_P_min', 'of_AU12_r_P_std', 'of_AU14_r_P_mean', 'of_AU14_r_P_var', 'of_AU14_r_P_max', 'of_AU14_r_P_min', 'of_AU14_r_P_std', 'of_AU15_r_P_mean', 'of_AU15_r_P_var', 'of_AU15_r_P_max', 'of_AU15_r_P_min', 'of_AU15_r_P_std', 'of_AU17_r_P_mean', 'of_AU17_r_P_var', 'of_AU17_r_P_max', 'of_AU17_r_P_min', 'of_AU17_r_P_std', 'of_AU20_r_P_mean', 'of_AU20_r_P_var', 'of_AU20_r_P_max', 'of_AU20_r_P_min', 'of_AU20_r_P_std', 'of_AU23_r_P_mean', 'of_AU23_r_P_var', 'of_AU23_r_P_max', 'of_AU23_r_P_min', 'of_AU23_r_P_std', 'of_AU25_r_P_mean', 'of_AU25_r_P_var', 'of_AU25_r_P_max', 'of_AU25_r_P_min', 'of_AU25_r_P_std', 'of_AU26_r_P_mean', 'of_AU26_r_P_var', 'of_AU26_r_P_max', 'of_AU26_r_P_min', 'of_AU26_r_P_std', 'of_AU45_r_P_mean', 'of_AU45_r_P_var', 'of_AU45_r_P_max', 'of_AU45_r_P_min', 'of_AU45_r_P_std']
+
+--- Hirability_Interview ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.269 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.115 -- Test Score: 0.857
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.385 -- Test Score: 0.714
+
+--- Evaluation Score_POST ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.462 -- Test Score: 0.286
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.500 -- Test Score: 0.429
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.571
+
+--- Confident ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.429
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.429
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.462 -- Test Score: 0.714
+
+--- Stressed ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.615 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.731 -- Test Score: 0.857
+
+--- Uncomfortable ---
+DecisionTreeClassifier    -- Train score: 1.000 -- Average CV score: 0.423 -- Test Score: 0.571
+XGBClassifier             -- Train score: 1.000 -- Average CV score: 0.423 -- Test Score: 0.714
+MLPClassifier             -- Train score: 1.000 -- Average CV score: 0.577 -- Test Score: 0.714
