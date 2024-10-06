@@ -129,8 +129,15 @@ y_test_scaled[Y_cols[1:]] = scaler_Y.transform(y_test[Y_cols[1:]])
 
 def train_and_eval_model(X_train, X_test, y_train, y_test, model, scorer):
     
+    # Cross validation
     scores = cross_val_score(model, X_train, y_train, cv=LeaveOneOut(), scoring=scorer)
-    print(f"{model.__class__.__name__:<25} -- Average CV {scorer.__class__.__name__:10}: {-scores.mean():.3f}")
+    
+    # Train on total train set and eval on test set
+    model.fit(X_train, y_train)
+    
+    score = scorer(model, X_test, y_test)
+    
+    print(f"{model.__class__.__name__:<25} -- Average CV score: {scores.mean():.3f} -- Test Score: {score:.3f}")
 
 ##### Regression
 
