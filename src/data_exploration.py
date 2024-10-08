@@ -233,6 +233,14 @@ xgb_hyper_params = {
     'n_estimators': [20,30,50,100]
 }
 
+# FFNN Hyper Parameters
+# TODO: HP Tunning: # of nodes in layer (#features/3, #features/2, #features), 
+# drop-out (0.05, 0.10, 0.15, 0.20), 
+# regularization (0.0001, 0.0005, 0.001)
+# def FFNN(l1_size, l2_size, drop_out, regularization):
+    
+
+
 eval_features(df_X_scaled[f1s_stats], df_Y_scaled, f1s_stats, 'Uncomfortable', tree.DecisionTreeRegressor, dt_hyper_params, True)       
 
 
@@ -243,6 +251,7 @@ df_X_scaled[f1s_stats].drop(index=0).iloc[1].values.reshape(1,-1)
 
 for feature_set in [f1s_stats, f2s_stats, f3s_stats]:
     for y_feat in Y_cols[1:]:
+        
         eval_features(df_X_scaled[feature_set], df_Y_scaled, feature_set, y_feat)
 
 
