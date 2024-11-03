@@ -1,0 +1,81 @@
+ABCMeta = DecisionTreeRegressor
+type = XGBRegressor
+
+Feature set: ['of_gaze_0_x_I_mean', 'of_gaze_0_x_I_var', 'of_gaze_0_x_I_max', 'of_gaze_0_x_I_min', 'of_gaze_0_y_I_mean', 'of_gaze_0_y_I_var', 'of_gaze_0_y_I_max', 'of_gaze_0_y_I_min', 'of_gaze_0_z_I_mean', 'of_gaze_0_z_I_var', 'of_gaze_0_z_I_max', 'of_gaze_0_z_I_min', 'of_gaze_1_x_I_mean', 'of_gaze_1_x_I_var', 'of_gaze_1_x_I_max', 'of_gaze_1_x_I_min', 'of_gaze_1_y_I_mean', 'of_gaze_1_y_I_var', 'of_gaze_1_y_I_max', 'of_gaze_1_y_I_min', 'of_gaze_1_z_I_mean', 'of_gaze_1_z_I_var', 'of_gaze_1_z_I_max', 'of_gaze_1_z_I_min', 'of_gaze_angle_x_I_mean', 'of_gaze_angle_x_I_var', 'of_gaze_angle_x_I_max', 'of_gaze_angle_x_I_min', 'of_gaze_angle_y_I_mean', 'of_gaze_angle_y_I_var', 'of_gaze_angle_y_I_max', 'of_gaze_angle_y_I_min', 'of_gaze_0_x_P_mean', 'of_gaze_0_x_P_var', 'of_gaze_0_x_P_max', 'of_gaze_0_x_P_min', 'of_gaze_0_y_P_mean', 'of_gaze_0_y_P_var', 'of_gaze_0_y_P_max', 'of_gaze_0_y_P_min', 'of_gaze_0_z_P_mean', 'of_gaze_0_z_P_var', 'of_gaze_0_z_P_max', 'of_gaze_0_z_P_min', 'of_gaze_1_x_P_mean', 'of_gaze_1_x_P_var', 'of_gaze_1_x_P_max', 'of_gaze_1_x_P_min', 'of_gaze_1_y_P_mean', 'of_gaze_1_y_P_var', 'of_gaze_1_y_P_max', 'of_gaze_1_y_P_min', 'of_gaze_1_z_P_mean', 'of_gaze_1_z_P_var', 'of_gaze_1_z_P_max', 'of_gaze_1_z_P_min', 'of_gaze_angle_x_P_mean', 'of_gaze_angle_x_P_var', 'of_gaze_angle_x_P_max', 'of_gaze_angle_x_P_min', 'of_gaze_angle_y_P_mean', 'of_gaze_angle_y_P_var', 'of_gaze_angle_y_P_max', 'of_gaze_angle_y_P_min']
+	Prediction Feature: Hirability_Interview
+                                               
+		ABCMeta             , r: 0.148 p: 0.4099 R^2: -0.864 MAE: 0.901
+                                               
+		type                , r: -0.141 p: 0.4333 R^2: -2.540 MAE: 1.050
+	Prediction Feature: Evaluation Score_POST
+                                               
+		ABCMeta             , r: 0.298 p: 0.0922 R^2: -0.550 MAE: 1.026
+                                               
+		type                , r: 0.323 p: 0.0665 R^2: -0.845 MAE: 0.829
+	Prediction Feature: Confident
+                                               
+		ABCMeta             , r: -0.277 p: 0.1183 R^2: -1.602 MAE: 1.217
+                                               
+		type                , r: 0.148 p: 0.4109 R^2: -2.570 MAE: 0.775
+	Prediction Feature: Stressed
+                                               
+		ABCMeta             , r: -0.283 p: 0.1101 R^2: -1.445 MAE: 1.286
+                                               
+		type                , r: -0.445 p: 0.0095 R^2: -3.054 MAE: 1.124
+	Prediction Feature: Uncomfortable
+                                               
+		ABCMeta             , r: 0.376 p: 0.0309 R^2: -0.124 MAE: 0.799
+                                               
+		type                , r: 0.344 p: 0.0497 R^2: -0.442 MAE: 0.802
+Feature set: ['of_pose_Tx_I_mean', 'of_pose_Tx_I_var', 'of_pose_Tx_I_max', 'of_pose_Tx_I_min', 'of_pose_Ty_I_mean', 'of_pose_Ty_I_var', 'of_pose_Ty_I_max', 'of_pose_Ty_I_min', 'of_pose_Tz_I_mean', 'of_pose_Tz_I_var', 'of_pose_Tz_I_max', 'of_pose_Tz_I_min', 'of_pose_Rx_I_mean', 'of_pose_Rx_I_var', 'of_pose_Rx_I_max', 'of_pose_Rx_I_min', 'of_pose_Ry_I_mean', 'of_pose_Ry_I_var', 'of_pose_Ry_I_max', 'of_pose_Ry_I_min', 'of_pose_Rz_I_mean', 'of_pose_Rz_I_var', 'of_pose_Rz_I_max', 'of_pose_Rz_I_min', 'of_pose_Tx_P_mean', 'of_pose_Tx_P_var', 'of_pose_Tx_P_max', 'of_pose_Tx_P_min', 'of_pose_Ty_P_mean', 'of_pose_Ty_P_var', 'of_pose_Ty_P_max', 'of_pose_Ty_P_min', 'of_pose_Tz_P_mean', 'of_pose_Tz_P_var', 'of_pose_Tz_P_max', 'of_pose_Tz_P_min', 'of_pose_Rx_P_mean', 'of_pose_Rx_P_var', 'of_pose_Rx_P_max', 'of_pose_Rx_P_min', 'of_pose_Ry_P_mean', 'of_pose_Ry_P_var', 'of_pose_Ry_P_max', 'of_pose_Ry_P_min', 'of_pose_Rz_P_mean', 'of_pose_Rz_P_var', 'of_pose_Rz_P_max', 'of_pose_Rz_P_min']
+	Prediction Feature: Hirability_Interview
+                                               
+		ABCMeta             , r: -0.150 p: 0.4040 R^2: -1.658 MAE: 1.251
+                                               
+		type                , r: -0.184 p: 0.3045 R^2: -3.195 MAE: 0.979
+	Prediction Feature: Evaluation Score_POST
+                                               
+		ABCMeta             , r: 0.156 p: 0.3853 R^2: -0.723 MAE: 1.039
+                                               
+		type                , r: 0.150 p: 0.4040 R^2: -1.969 MAE: 0.907
+	Prediction Feature: Confident
+                                               
+		ABCMeta             , r: 0.036 p: 0.8412 R^2: -0.860 MAE: 0.898
+                                               
+		type                , r: -0.312 p: 0.0775 R^2: -3.018 MAE: 1.074
+	Prediction Feature: Stressed
+                                               
+		ABCMeta             , r: -0.022 p: 0.9037 R^2: -1.529 MAE: 0.958
+                                               
+		type                , r: 0.103 p: 0.5693 R^2: -3.562 MAE: 0.803
+	Prediction Feature: Uncomfortable
+                                               
+		ABCMeta             , r: 0.543 p: 0.0011 R^2: 0.132 MAE: 0.520
+                                               
+		type                , r: 0.449 p: 0.0087 R^2: -0.322 MAE: 0.634
+Feature set: ['of_AU01_r_I_mean', 'of_AU01_r_I_var', 'of_AU01_r_I_max', 'of_AU01_r_I_min', 'of_AU02_r_I_mean', 'of_AU02_r_I_var', 'of_AU02_r_I_max', 'of_AU02_r_I_min', 'of_AU04_r_I_mean', 'of_AU04_r_I_var', 'of_AU04_r_I_max', 'of_AU04_r_I_min', 'of_AU05_r_I_mean', 'of_AU05_r_I_var', 'of_AU05_r_I_max', 'of_AU05_r_I_min', 'of_AU06_r_I_mean', 'of_AU06_r_I_var', 'of_AU06_r_I_max', 'of_AU06_r_I_min', 'of_AU07_r_I_mean', 'of_AU07_r_I_var', 'of_AU07_r_I_max', 'of_AU07_r_I_min', 'of_AU09_r_I_mean', 'of_AU09_r_I_var', 'of_AU09_r_I_max', 'of_AU09_r_I_min', 'of_AU10_r_I_mean', 'of_AU10_r_I_var', 'of_AU10_r_I_max', 'of_AU10_r_I_min', 'of_AU12_r_I_mean', 'of_AU12_r_I_var', 'of_AU12_r_I_max', 'of_AU12_r_I_min', 'of_AU14_r_I_mean', 'of_AU14_r_I_var', 'of_AU14_r_I_max', 'of_AU14_r_I_min', 'of_AU15_r_I_mean', 'of_AU15_r_I_var', 'of_AU15_r_I_max', 'of_AU15_r_I_min', 'of_AU17_r_I_mean', 'of_AU17_r_I_var', 'of_AU17_r_I_max', 'of_AU17_r_I_min', 'of_AU20_r_I_mean', 'of_AU20_r_I_var', 'of_AU20_r_I_max', 'of_AU20_r_I_min', 'of_AU23_r_I_mean', 'of_AU23_r_I_var', 'of_AU23_r_I_max', 'of_AU23_r_I_min', 'of_AU25_r_I_mean', 'of_AU25_r_I_var', 'of_AU25_r_I_max', 'of_AU25_r_I_min', 'of_AU26_r_I_mean', 'of_AU26_r_I_var', 'of_AU26_r_I_max', 'of_AU26_r_I_min', 'of_AU45_r_I_mean', 'of_AU45_r_I_var', 'of_AU45_r_I_max', 'of_AU45_r_I_min', 'of_AU01_r_P_mean', 'of_AU01_r_P_var', 'of_AU01_r_P_max', 'of_AU01_r_P_min', 'of_AU02_r_P_mean', 'of_AU02_r_P_var', 'of_AU02_r_P_max', 'of_AU02_r_P_min', 'of_AU04_r_P_mean', 'of_AU04_r_P_var', 'of_AU04_r_P_max', 'of_AU04_r_P_min', 'of_AU05_r_P_mean', 'of_AU05_r_P_var', 'of_AU05_r_P_max', 'of_AU05_r_P_min', 'of_AU06_r_P_mean', 'of_AU06_r_P_var', 'of_AU06_r_P_max', 'of_AU06_r_P_min', 'of_AU07_r_P_mean', 'of_AU07_r_P_var', 'of_AU07_r_P_max', 'of_AU07_r_P_min', 'of_AU09_r_P_mean', 'of_AU09_r_P_var', 'of_AU09_r_P_max', 'of_AU09_r_P_min', 'of_AU10_r_P_mean', 'of_AU10_r_P_var', 'of_AU10_r_P_max', 'of_AU10_r_P_min', 'of_AU12_r_P_mean', 'of_AU12_r_P_var', 'of_AU12_r_P_max', 'of_AU12_r_P_min', 'of_AU14_r_P_mean', 'of_AU14_r_P_var', 'of_AU14_r_P_max', 'of_AU14_r_P_min', 'of_AU15_r_P_mean', 'of_AU15_r_P_var', 'of_AU15_r_P_max', 'of_AU15_r_P_min', 'of_AU17_r_P_mean', 'of_AU17_r_P_var', 'of_AU17_r_P_max', 'of_AU17_r_P_min', 'of_AU20_r_P_mean', 'of_AU20_r_P_var', 'of_AU20_r_P_max', 'of_AU20_r_P_min', 'of_AU23_r_P_mean', 'of_AU23_r_P_var', 'of_AU23_r_P_max', 'of_AU23_r_P_min', 'of_AU25_r_P_mean', 'of_AU25_r_P_var', 'of_AU25_r_P_max', 'of_AU25_r_P_min', 'of_AU26_r_P_mean', 'of_AU26_r_P_var', 'of_AU26_r_P_max', 'of_AU26_r_P_min', 'of_AU45_r_P_mean', 'of_AU45_r_P_var', 'of_AU45_r_P_max', 'of_AU45_r_P_min']
+	Prediction Feature: Hirability_Interview
+                                               
+		ABCMeta             , r: -0.192 p: 0.2852 R^2: -1.750 MAE: 1.051
+                                               
+		type                , r: -0.310 p: 0.0796 R^2: -3.380 MAE: 1.138
+	Prediction Feature: Evaluation Score_POST
+                                               
+		ABCMeta             , r: 0.362 p: 0.0385 R^2: -0.265 MAE: 0.923
+                                               
+		type                , r: 0.527 p: 0.0016 R^2: -0.223 MAE: 0.691
+	Prediction Feature: Confident
+                                               
+		ABCMeta             , r: 0.443 p: 0.0099 R^2: -0.231 MAE: 0.601
+                                               
+		type                , r: 0.469 p: 0.0059 R^2: -0.236 MAE: 0.650
+	Prediction Feature: Stressed
+                                               
+		ABCMeta             , r: -0.252 p: 0.1568 R^2: -1.507 MAE: 1.032
+                                               
+		type                , r: 0.044 p: 0.8068 R^2: -1.540 MAE: 0.942
+	Prediction Feature: Uncomfortable
+                                               
+		ABCMeta             , r: 0.280 p: 0.1147 R^2: -0.433 MAE: 0.919
+                                               
+		type                , r: 0.181 p: 0.3142 R^2: -1.423 MAE: 0.942
